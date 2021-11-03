@@ -43,8 +43,16 @@ dependencies {
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+    implementation("io.reactivex.rxjava3:rxkotlin:3.0.1")
     implementation "com.bytedance.tools.codelocator:codelocator-core:1.0.0"
     implementation 'me.ele:lancet-base:1.0.6'
+    implementation 'net.qiujuer.genius:ui:2.1.1'
+    implementation 'net.qiujuer.genius:res:2.1.1'
+    implementation 'com.bytedance.scene:scene:1.1.0'
+    implementation 'com.bytedance.scene:scene-ui:1.1.0'
+    implementation 'com.bytedance.scene:scene-shared-element-animation:1.1.0'
+    implementation 'com.bytedance.scene:scene-ktx:1.1.0'
     debugImplementation "com.bytedance.tools.codelocator:codelocator-lancet-xml:1.0.0"
     debugImplementation "com.bytedance.tools.codelocator:codelocator-lancet-activity:1.0.0"
     debugImplementation "com.bytedance.tools.codelocator:codelocator-lancet-view:1.0.0"

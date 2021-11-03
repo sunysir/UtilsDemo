@@ -1,13 +1,15 @@
 package com.sunyang.utilsdemo
 
-import androidx.appcompat.app.AppCompatActivity
-import android.os.Bundle
-import android.widget.TextView
+import com.bytedance.scene.Scene
+import com.bytedance.scene.ui.SceneActivity
+import com.sunyang.utilsdemo.main.MainScene
 
-class MainActivity : AppCompatActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-        val text = findViewById<TextView>(R.id.text)
+class MainActivity : SceneActivity() {
+    override fun getHomeSceneClass(): Class<out Scene> {
+        return MainScene::class.java
+    }
+
+    override fun supportRestore(): Boolean {
+        return false
     }
 }

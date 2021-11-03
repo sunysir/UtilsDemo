@@ -13,4 +13,22 @@
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.Base">
+        <item name="colorControlNormal">@color/grey_300</item>
+        <item name="colorControlActivated">@color/grey_500</item>
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="Theme.Base" parent="Theme.AppCompat">
+        <!-- Customize your theme here. -->
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:fitsSystemWindows">true</item>
+        <!--- 去除顶部状态栏 -->
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
 </resources>
